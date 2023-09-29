@@ -5,6 +5,7 @@
         manifest.xml
         manifest.xml
         manifest.xml
+        manifest.xml
         face-default-sec.xml
         manifest.xml
         manifest.xml
@@ -58,6 +59,11 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.1::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.7::ICameraProvider/external/0</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.gatekeeper</name>
@@ -577,6 +583,16 @@
             <instance>default</instance>
         </interface>
         <fqname>@1.3::ISehSysInputDev/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.tlc.blockchain</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISehBlockchain</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ISehBlockchain/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.tlc.payment</name>

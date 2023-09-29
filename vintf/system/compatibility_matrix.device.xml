@@ -24,6 +24,7 @@
         vendor.samsung.hardware.authfw@1.0-matrix.xml
         skeymint_v200_framework_compatibility_matrix.xml
         strongbox_km_v40_framework_compatibility_matrix.xml
+        tlc_blockchain_compatibility_matrix.xml
         framework_compatibility_matrix.xml
         vendor.samsung.hardware.tlc.iccc@1.0-matrix.xml
         vendor.samsung.hardware.tlc.mpos_tui@1.0-matrix.xml
@@ -40,8 +41,6 @@
         face_compatibility_matrix.xml
         soter_compatibility_matrix.xml
         ifaa_compatibility_matrix.xml
-        skeymint_v200_framework_compatibility_matrix.xml
-        strongbox_km_v40_framework_compatibility_matrix.xml
         framework_compatibility_matrix.xml
         framework_compatibility_matrix.xml
         framework_compatibility_matrix.xml
@@ -82,14 +81,6 @@
             <name>IGnss</name>
             <instance>default</instance>
             <instance>gnss_vendor</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
-        <name>android.hardware.keymaster</name>
-        <version>4.0</version>
-        <interface>
-            <name>IKeymasterDevice</name>
-            <instance>strongbox</instance>
         </interface>
     </hal>
     <hal format="hidl" optional="true">
@@ -856,14 +847,6 @@
         </interface>
     </hal>
     <hal format="hidl" optional="true">
-        <name>vendor.qti.hardware.servicetracker</name>
-        <version>1.0-2</version>
-        <interface>
-            <name>IServicetracker</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.slmadapter</name>
         <version>1.0</version>
         <interface>
@@ -1095,22 +1078,6 @@
         <version>1.0</version>
         <interface>
             <name>ISehIfaa</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="false">
-        <name>vendor.samsung.hardware.keymint</name>
-        <version>1-2</version>
-        <interface>
-            <name>ISehKeyMintExtension</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="false">
-        <name>vendor.samsung.hardware.keymint</name>
-        <version>1-2</version>
-        <interface>
-            <name>ISehKeyMintFactory</name>
             <instance>default</instance>
         </interface>
     </hal>
@@ -1392,6 +1359,14 @@
         <version>1.0</version>
         <interface>
             <name>ISehThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.samsung.hardware.tlc.blockchain</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISehBlockchain</name>
             <instance>default</instance>
         </interface>
     </hal>
