@@ -1,0 +1,4 @@
+# [ HDM SW Block
+on property:vendor.hdm.internal.cpm=boot
+    stop cass
+# ] HDM SW Block
