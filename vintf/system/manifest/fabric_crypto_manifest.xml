@@ -1,9 +1,9 @@
 <manifest version="1.0" type="framework">
     <hal format="aidl">
-        <name>android.system.keystore2</name>
-        <version>3</version>
+        <name>com.samsung.security.fabric.cryptod</name>
+        <version>1</version>
         <interface>
-            <name>IKeystoreService</name>
+            <name>IFabricCryptoService</name>
             <instance>default</instance>
         </interface>
     </hal>

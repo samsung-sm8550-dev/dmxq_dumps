@@ -1,10 +1,10 @@
 <!--
     Input:
-        compatibility_matrix.7.xml
-        matrix_kernel_config_t_5.10.xml
-        matrix_kernel_config_t_5.15.xml
+        hardware/interfaces/compatibility_matrices/compatibility_matrix.7.xml
+        out/soong/.intermediates/kernel/configs/t/android-5.10/kernel_config_t_5.10/matrix_kernel_config_t_5.10.xml
+        out/soong/.intermediates/kernel/configs/t/android-5.15/kernel_config_t_5.15/matrix_kernel_config_t_5.15.xml
 -->
-<compatibility-matrix version="5.0" type="framework" level="7">
+<compatibility-matrix version="7.0" type="framework" level="7">
     <hal format="hidl" optional="true">
         <name>android.hardware.atrace</name>
         <version>1.0</version>
@@ -13,7 +13,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>android.hardware.audio</name>
         <version>6.0</version>
         <version>7.0-1</version>
@@ -22,7 +22,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>android.hardware.audio.effect</name>
         <version>6.0</version>
         <version>7.0</version>
@@ -240,7 +240,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>android.hardware.gatekeeper</name>
         <version>1.0</version>
         <interface>
@@ -310,7 +310,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>android.hardware.graphics.mapper</name>
         <version>2.1</version>
         <version>3.0</version>
@@ -320,7 +320,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="false">
+    <hal format="aidl" optional="true">
         <name>android.hardware.health</name>
         <interface>
             <name>IHealth</name>
@@ -462,7 +462,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl" optional="false">
+    <hal format="aidl" optional="true">
         <name>android.hardware.power</name>
         <version>2-3</version>
         <interface>
@@ -571,13 +571,6 @@
         </interface>
     </hal>
     <hal format="aidl" optional="true">
-        <name>android.hardware.security.dice</name>
-        <interface>
-            <name>IDiceDevice</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl" optional="true">
         <name>android.hardware.security.keymint</name>
         <version>1-2</version>
         <interface>
@@ -657,7 +650,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" optional="false">
+    <hal format="hidl" optional="true">
         <name>android.hardware.thermal</name>
         <version>2.0</version>
         <interface>
