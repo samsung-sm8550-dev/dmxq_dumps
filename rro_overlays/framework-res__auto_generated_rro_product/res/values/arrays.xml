@@ -157,8 +157,8 @@
         <item>999999</item>
     </integer-array>
     <string-array name="config_mobile_hotspot_provision_app">
-        <item>com.android.settings</item>
-        <item>com.samsung.android.settings.provisioning.ProvisioningActivity</item>
+        <item>com.samsung.unifiedtp</item>
+        <item>com.samsung.unifiedtp.ui.TetheringProvisionActivity</item>
     </string-array>
     <integer-array name="config_screenBrightnessBacklight">
         <item>0</item>
