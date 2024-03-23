@@ -28,13 +28,6 @@
 #
 #
 on post-fs-data
-# Permission for UWB driver
-    chmod 0660 /dev/sr200
-    chown uwb uwb /dev/sr200
-
-on property:sys.boot_completed=1
-    chmod 0660 /dev/sr200
-    chown uwb uwb /dev/sr200
 
 # uwb_factory
     mkdir /efs/sec_efs/uwb_factory 0775 uwb uwb
@@ -52,7 +45,36 @@ on property:sys.boot_completed=1
     chown uwb uwb /efs/sec_efs/uwb_factory/9_portrait
     chown uwb uwb /efs/sec_efs/uwb_factory/AOA_CAL_DATA
 
-    mkdir /data/uwb/ 770 uwb system
+    mkdir /data/vendor/uwb/ 770 uwb system encryption=None	
     copy /vendor/etc/uwb_key /data/vendor/uwb/Key
     chmod 660 /data/vendor/uwb/Key
     chown uwb uwb /data/vendor/uwb/Key
+
+# Permission for UWB driver
+    chmod 0660 /dev/qm35725
+    chown uwb uwb /dev/qm35725
+    chmod 0660 /dev/qm35-coredump
+    chown uwb uwb /dev/qm35-coredump
+
+on property:ro.vendor.uwb.feature.chipname=sr100
+    chmod 0660 /dev/sr100
+    chown uwb uwb /dev/sr100
+
+on property:ro.vendor.uwb.feature.chipname=sr200
+# Permission for UWB driver
+    chmod 0660 /dev/sr200
+    chown uwb uwb /dev/sr200
+
+on property:ro.vendor.uwb.feature.chipname=sr100 && property:sys.boot_completed=1
+    chmod 0660 /dev/sr100
+    chown uwb uwb /dev/sr100
+
+on property:ro.vendor.uwb.feature.chipname=sr200 && property:sys.boot_completed=1
+    chmod 0660 /dev/sr200
+    chown uwb uwb /dev/sr200
+
+on property:ro.vendor.uwb.feature.chipname=qm35725 && property:sys.boot_completed=1
+    chmod 0660 /dev/qm35725
+    chown uwb uwb /dev/qm35725
+    chmod 0660 /dev/qm35-coredump
+    chown uwb uwb /dev/qm35-coredump

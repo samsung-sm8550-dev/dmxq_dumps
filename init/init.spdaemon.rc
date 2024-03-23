@@ -1,9 +1,3 @@
-on post-fs && property:ro.boot.product.vendor.sku=kalama && property:ro.boot.debug_level=0x494d
-    write /sys/devices/platform/soc/188101c.remoteproc-spss/remoteproc/remoteproc0/recovery enabled
-
-on post-fs && property:ro.boot.product.vendor.sku=kalama && property:ro.boot.debug_level=0x4948
-    write /sys/devices/platform/soc/188101c.remoteproc-spss/remoteproc/remoteproc0/recovery enabled
-
 on post-fs && property:ro.boot.product.vendor.sku=kalama
     start vendor.spdaemon
     start vendor.sec_nvm

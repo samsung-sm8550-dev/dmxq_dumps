@@ -12,6 +12,8 @@ on early-boot
     chown system system /sys/class/sec/tsp1/enabled
     chown system system /sys/class/sec/tsp2/enabled
     chown system system /sys/class/sec/sec_epen/enabled
+    chown system system /sys/class/sec/digital_hall/digital_hall_thd
+    chmod 0664 /sys/class/sec/digital_hall/digital_hall_thd
 
     # pogo keyboard
     chown system system /sys/class/sec/sec_keypad/fw_update
@@ -128,9 +130,13 @@ on boot
     chown system system /sys/class/sec/sec_sidekey/input/enabled
     chmod 0660 /sys/class/sec/sec_sidekey/input/enabled
 
-    # Permission for Kyeboard
+    # Permission for Keyboard
     chown system system /sys/class/sec/sec_keypad/enabled
-    chmod 0660 /sys/class/sec/sec_keypad/enabled
+    chown system system /sys/class/sec/sec_keypad/sec_pogo_keyboard_fw
+
+    # Permission for digital_hall
+    chown system system /sys/class/sec/digital_hall/digital_hall_thd
+    chmod 0664 /sys/class/sec/digital_hall/digital_hall_thd
 
     # TAAS
     chown system system /mnt/vendor/efs/taas
@@ -144,8 +150,15 @@ on boot
     chown system system /efs/taas/taaslog
     chmod 0660 /efs/taas/taaslog
 
+    # Permission for Kyeboard
+    chown system system /sys/class/sec/sec_keypad/enabled
+    chmod 0660 /sys/class/sec/sec_keypad/enabled
+    chown system system /sys/class/sec/sec_keypad/sec_pogo_keyboard_fw
+    chmod 0220 /sys/class/sec/sec_keypad/sec_pogo_keyboard_fw
+
 # enabled permission
 on property:sys.boot_completed=1
+    chown system system /dev/tspio
     chown system system /sys/class/sec/tsp/input/enabled
     chown system system /sys/class/sec/tsp1/input/enabled
     chown system system /sys/class/sec/tsp2/input/enabled
@@ -163,6 +176,8 @@ on property:sys.boot_completed=1
     chown system system /sys/class/sec/tsp2/input/trusted_touch_enable
     chown system system /sys/class/sec/tsp2/input/trusted_touch_event
     chown system system /sys/class/sec/tsp2/input/trusted_touch_type
+    chown system system /sys/class/sec/digital_hall/digital_hall_thd
+    chmod 0664 /sys/class/sec/digital_hall/digital_hall_thd
 
 service sec-sysinput-1-3 /vendor/bin/hw/vendor.samsung.hardware.sysinput@1.3-service
     class hal
