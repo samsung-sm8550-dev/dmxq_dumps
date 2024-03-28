@@ -10,6 +10,7 @@
         soter_device-manifest.xml
         rkp_skeymint_v200_manifest.xml
         strongbox_km_v40_manifest.xml
+        gatekeeper_manifest.xml
         manifest.xml
         manifest.xml
         manifest.xml
@@ -60,7 +61,7 @@
         <transport>hwbinder</transport>
         <fqname>@2.7::ICameraProvider/external/0</fqname>
     </hal>
-    <hal format="hidl">
+    <hal format="hidl" override="true">
         <name>android.hardware.gatekeeper</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
