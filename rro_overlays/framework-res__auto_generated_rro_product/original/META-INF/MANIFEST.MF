@@ -7,11 +7,11 @@ Name: SEC-INF/buildConfirm.crt
 SHA-256-Digest: KXPtZBP9ZJT4aUs4ggqLtOJUTC3FoNcQEqzF2uC25xc=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: 1L+zPpEnpUVMzJOkJJMhruCnQoWxKswPk4wwWoz9G5s=
+SHA-256-Digest: z7mF8d5Bdy320z9Z8OjoD8fM1q+Rnm0UqPhRz6Orh3I=
 
 Name: res/xml/power_profile.xml
 SHA-256-Digest: G023SvdPzALtdy3m07MZY64j4im4OfJntNno4fZZxxc=
 
 Name: resources.arsc
-SHA-256-Digest: 57r8rNuytcHVk6J66J2LJqfeTIkh/wchlK5ZdO6PcOU=
+SHA-256-Digest: kgRqkFLyRRbs1l8WtdfKEyCyI2VrlbCP/gK786E97Ww=
 

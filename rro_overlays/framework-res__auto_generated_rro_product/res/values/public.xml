@@ -14,10 +14,11 @@
     <public type="array" name="config_screenBrightnessNits" id="0x7f01000b" />
     <public type="array" name="config_screenBrightnessRangeForClearView" id="0x7f01000c" />
     <public type="bool" name="config_AFC_enabled" id="0x7f020000" />
-    <public type="bool" name="config_dynamic_automatic_brightness_available" id="0x7f020001" />
-    <public type="bool" name="config_showNavigationBar" id="0x7f020002" />
-    <public type="bool" name="config_supportAudioSourceUnprocessed" id="0x7f020003" />
-    <public type="bool" name="config_systemCaptionsServiceCallsEnabled" id="0x7f020004" />
+    <public type="bool" name="config_cbrs_supported" id="0x7f020001" />
+    <public type="bool" name="config_dynamic_automatic_brightness_available" id="0x7f020002" />
+    <public type="bool" name="config_showNavigationBar" id="0x7f020003" />
+    <public type="bool" name="config_supportAudioSourceUnprocessed" id="0x7f020004" />
+    <public type="bool" name="config_systemCaptionsServiceCallsEnabled" id="0x7f020005" />
     <public type="dimen" name="config_screenBrightnessDimFloat" id="0x7f030000" />
     <public type="dimen" name="config_screenBrightnessSettingDefaultFloat" id="0x7f030001" />
     <public type="dimen" name="config_screenBrightnessSettingMaximumFloat" id="0x7f030002" />

@@ -7,7 +7,7 @@ Name: SEC-INF/buildConfirm.crt
 SHA-256-Digest: KXPtZBP9ZJT4aUs4ggqLtOJUTC3FoNcQEqzF2uC25xc=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: qUfzQmkkl8/X3A4WtA1Med6uTWrCC3RHdXfMeSEwc88=
+SHA-256-Digest: 0tO1WASc3+8np9+2RBpqApjTCqI4lWpGOmxI+nNicxg=
 
 Name: res/xml/power_profile.xml
 SHA-256-Digest: G023SvdPzALtdy3m07MZY64j4im4OfJntNno4fZZxxc=

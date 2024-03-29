@@ -1,6 +1,6 @@
 Signature-Version: 1.0
 Created-By: 1.0 (MX Security SignApk)
-SHA-256-Digest-Manifest: 72fRGLoreD5EF4XVZkisNyR4izvSMMEeUt7MxVdRO5A=
+SHA-256-Digest-Manifest: 4yN+84C3LShncJg13v5c6+shX69UnGUTxalJW1EokYU=
 X-Android-APK-Signed: 2, 3
 
 Name: AndroidManifest.xml
@@ -10,7 +10,7 @@ Name: SEC-INF/buildConfirm.crt
 SHA-256-Digest: P3ynqIdbDmwF1PsNloTMDkK1dQ1IUV/iAEjaKUKMbUg=
 
 Name: SEC-INF/buildinfo.xml
-SHA-256-Digest: PioqYGRIEFTEjXe4Kv540P0YNfmWDOXkgp/hdPjIwyk=
+SHA-256-Digest: 4qTc079MxFUT8QF2prfPvMG/h1hs22oKiu3DoaGHYTM=
 
 Name: res/xml/power_profile.xml
 SHA-256-Digest: b6bGU2xip/nmEpY9uhRegk5PqQj/roSwVwlYRdHoaUI=
