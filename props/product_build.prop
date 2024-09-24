@@ -5,18 +5,18 @@
 ro.product.product.brand=samsung
 ro.product.product.device=qssi
 ro.product.product.manufacturer=samsung
-ro.product.product.model=SM-S9160
-ro.product.product.name=dm2qzhx
+ro.product.product.model=SM-S916B
+ro.product.product.name=dm2qxxx
 ro.product.name_for_attestation=
 ro.product.model_for_attestation=
 ro.product.brand_for_attestation=
-ro.product.build.date=Thu Jul  4 17:48:07 KST 2024
-ro.product.build.date.utc=1720082887
-ro.product.build.fingerprint=samsung/dm2qzhx/qssi:14/UP1A.231005.007/S9160ZHS4CXG2:user/release-keys
+ro.product.build.date=Mon Aug 19 11:30:13 KST 2024
+ro.product.build.date.utc=1724034613
+ro.product.build.fingerprint=samsung/dm2qxxx/qssi:14/UP1A.231005.007/S916BXXU6CXH7:user/release-keys
 ro.product.build.id=UP1A.231005.007
 ro.product.build.tags=release-keys
 ro.product.build.type=user
-ro.product.build.version.incremental=S9160ZHS4CXG2
+ro.product.build.version.incremental=S916BXXU6CXH7
 ro.product.build.version.release=14
 ro.product.build.version.release_or_codename=14
 ro.product.build.version.sdk=34
@@ -67,6 +67,8 @@ bluetooth.profile.sap.server.enabled=true
 #bluetooth.profile.ccp.server.enabled?=false
 # Removed by post_process_props.py because overridden by bluetooth.profile.vcp.controller.enabled=true
 #bluetooth.profile.vcp.controller.enabled?=false
+# Codec capabilities that support a2dp offload
+persist.bluetooth.samsung.a2dp_offload.cap=sbc-aptx-ssc-hifi
 ####################################
 # from variable ADDITIONAL_PRODUCT_PROPERTIES
 ####################################
@@ -116,7 +118,7 @@ setupwizard.theme=glif_v3_light
 ro.setupwizard.wifi_on_exit=false
 ro.setupwizard.mode=OPTIONAL
 ro.opa.eligible_device=true
-ro.com.google.gmsversion=14_202311
+ro.com.google.gmsversion=14_202406
 setupwizard.feature.enable_quick_start_flow=true
 # end of file
 
