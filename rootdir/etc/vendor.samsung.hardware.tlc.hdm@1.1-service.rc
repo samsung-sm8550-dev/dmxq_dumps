@@ -27,3 +27,24 @@ on property:ro.boot.hdm_status=*
 on property:vendor.hdm.internal.cpm=boot
     stop cass
 
+on property:vendor.hdm.internal.dis=start
+    stop vendor.nfc_hal_service
+
+on property:vendor.hdm.internal.usb=start
+    start adbd
+
+on property:vendor.hdm.internal.usb=stop
+    stop adbd
+
+on property:vendor.hdm.internal.wlan=start
+    start wificond
+
+on property:vendor.hdm.internal.wlan=stop
+    stop wificond
+
+on property:vendor.hdm.internal.bt=boot
+    stop vendor.bluetooth-1-1-qti
+
+on property:vendor.hdm.internal.bt=start
+    start vendor.bluetooth-1-1-qti
+
