@@ -220,8 +220,10 @@ sec_ap_pmic.ko
 nfc_sec.ko
 sg.ko
 spi-msm-geni.ko
+realtek.ko
 smsc.ko
 mcp25xxfd.ko
+tc956x_pcie_eth.ko
 smsc75xx.ko
 smsc95xx.ko
 msm_sharedmem.ko
@@ -399,6 +401,7 @@ snd-soc-cs35l43-i2c.ko
 snd-soc-cs35l45-i2c.ko
 snd-soc-hdmi-codec.ko
 snd-soc-wm-adsp.ko
+snd-soc-tas5805m.ko
 snd-soc-cs40l26.ko
 sec_audio_sysfs.ko
 snd_debug_proc.ko
